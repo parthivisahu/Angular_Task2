@@ -22,7 +22,17 @@ export class AppComponent {
       support:"Dedicated Phone Support",
       subdomain:"Free Subdomain",
       reports:"Monthly Status Reports",
-      isTextMuted:false,
+      
+      privateIcon:"fas fa-times",
+      supportIcon:"fas fa-times",
+      subdomainIcon:"fas fa-times",
+      reportsIcon:"fas fa-times",
+    
+      privateList:"text-muted",
+      supportList:"text-muted",
+      subdomainList:"text-muted",
+      reportsList:"text-muted",
+      
     },
     {
       plan:"PLUS",
@@ -35,6 +45,17 @@ export class AppComponent {
       support:"Dedicated Phone Support",
       subdomain:"Free Subdomain",
       reports:"Monthly Status Reports",
+     
+      privateIcon:"fas fa-check",
+      supportIcon:"fas fa-check",
+      subdomainIcon:"fas fa-check",
+      reportsIcon:"fas fa-times",
+      
+      privateList:"",
+      supportList:"",
+      subdomainList:"",
+      reportsList:"text-muted",
+      
     },
     {
       plan:"PRO",
@@ -47,6 +68,16 @@ export class AppComponent {
       support:"Dedicated Phone Support",
       subdomain:"Free Subdomain",
       reports:"Monthly Status Reports",
+      
+      privateIcon:"fas fa-check",
+      supportIcon:"fas fa-check",
+      subdomainIcon:"fas fa-check",
+      reportsIcon:"fas fa-check",
+      
+      privateList:"",
+      supportList:"",
+      subdomainList:"",
+      reportsList:"",
     }
   ]
 }

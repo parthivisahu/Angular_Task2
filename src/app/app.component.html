@@ -2,19 +2,28 @@
 
     <div class="row container justify-content-center ">
      
-        <app-cards class="col-lg-4" [price]="plans[0].price" 
-        [plan]="plans[0].plan" 
-        [desc]="plans[0].desc"
-        [storage]="plans[0].storage"
-        [limit]="plans[0].limit"
-        [access]="plans[0].access"
-        [private]="plans[0].private"
-        [support]="plans[0].support"
-        [subdomain]="plans[0].subdomain"
-        [reports]="plans[0].reports"
+        <app-cards class="col-lg-4" *ngFor="let item of plans"
+        [price]=" item.price" 
+        [plan]=" item.plan" 
+        [desc]=" item.desc"
+        [storage]=" item.storage"
+        [limit]=" item.limit"
+        [access]=" item.access"
+        [private]=" item.private"
+        [support]=" item.support"
+        [subdomain]=" item.subdomain"
+        [reports]=" item.reports"
+        [privateIcon]="item.privateIcon"
+        [privateList]="item.privateList"
+        [supportIcon]="item.supportIcon"
+        [supportList]="item.supportList"
+        [subdomainIcon]="item.subdomainIcon"
+        [subdomainList]="item.subdomainList"
+        [reportsIcon]="item.reportsIcon"
+        [reportsList]="item.reportsList"
         > 
       </app-cards><br>
-        <app-cards class="col-lg-4" [price]="plans[1].price" 
+        <!-- <app-cards class="col-lg-4" [price]="plans[1].price" 
         [plan]="plans[1].plan"
         [desc]="plans[1].desc"
         [storage]="plans[1].storage"
@@ -37,7 +46,7 @@
          [subdomain]="plans[2].subdomain"
          [reports]="plans[2].reports"
          >
-        </app-cards><br>
+        </app-cards><br> -->
       </div>
      
     

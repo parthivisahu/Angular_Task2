@@ -16,4 +16,14 @@ export class CardsComponent {
   @Input() support:String="";
   @Input() subdomain:String="";
   @Input() reports:String="";
+
+  @Input() privateIcon="";
+  @Input() supportIcon="";
+  @Input() subdomainIcon="";
+  @Input() reportsIcon="";
+ 
+  @Input() privateList="";
+  @Input() supportList="";
+  @Input() subdomainList="";
+  @Input() reportsList="";
 }
